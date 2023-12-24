@@ -1,4 +1,7 @@
-#include <string>
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+# include <string>
+# include <iostream>
 
 class	Contact
 {
@@ -10,5 +13,7 @@ class	Contact
 		std::string	darkest_sec;
 	public:
 		Contact();
-		
+		void	AddContact();
+		void	ViewContacts();
 };
+#endif
