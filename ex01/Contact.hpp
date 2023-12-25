@@ -13,7 +13,7 @@ class	Contact
 		std::string	darkest_sec;
 	public:
 		Contact();
-		void	AddContact();
+		void	SetContact();
 		void	ViewContacts();
 };
 #endif

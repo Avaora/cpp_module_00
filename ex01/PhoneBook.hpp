@@ -6,7 +6,7 @@ class	PhoneBook
 {
 	private:
 		Contact arr[8];
-		int		index;
+		size_t	index;
 	public:
 		PhoneBook();
 		void	NewContact();
