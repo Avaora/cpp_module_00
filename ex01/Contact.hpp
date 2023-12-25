@@ -6,6 +6,7 @@
 class	Contact
 {
 	private:
+		size_t		index;
 		std::string	firstname;
 		std::string	lastname;
 		std::string	nickname;
@@ -13,7 +14,7 @@ class	Contact
 		std::string	darkest_sec;
 	public:
 		Contact();
-		void	SetContact();
-		void	ViewContacts();
+		void		SetContact(size_t i);
+		std::string	GetField(const std::string field);
 };
 #endif

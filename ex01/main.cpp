@@ -15,11 +15,15 @@ int	main()
 		std::cin >> cmd;
 		if (cmd.compare("ADD") == 0)
 			archive.NewContact();
-		//else if (cmd.compare("SEARCH") == 0)
+		else if (cmd.compare("SEARCH") == 0)
+		{
+			archive.PrintTable();
+			cout << ""
+		}
 		else if (cmd.compare("EXIT") == 0)
 			break ;
 		else
-			std::cout << "Command not found.";
+			std::cout << "Command not found.\n";
 		std::cout << std::endl;
 	}
 	return (0);

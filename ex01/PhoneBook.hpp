@@ -1,5 +1,8 @@
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
+# include <iostream>
+# include <iomanip>
+# include <string>
 # include "Contact.hpp"
 
 class	PhoneBook
@@ -10,5 +13,6 @@ class	PhoneBook
 	public:
 		PhoneBook();
 		void	NewContact();
+		void	PrintTable();
 };
 #endif
