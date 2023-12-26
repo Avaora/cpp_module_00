@@ -12,19 +12,21 @@ int	main()
 	while (true)
 	{
 		std::cout << "Command: ";
-		std::cin >> cmd;
-		if (cmd.compare("ADD") == 0)
+		std::getline(std::cin, cmd);
+		if (cmd.empty() == true)
+			continue ;
+		else if (cmd.compare("ADD") == 0)
 			archive.NewContact();
 		else if (cmd.compare("SEARCH") == 0)
 		{
 			archive.PrintTable();
-			cout << ""
+			archive.PrintContact();
 		}
 		else if (cmd.compare("EXIT") == 0)
 			break ;
 		else
 			std::cout << "Command not found.\n";
-		std::cout << std::endl;
+		//std::cout << std::endl;
 	}
 	return (0);
 }

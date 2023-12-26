@@ -14,5 +14,7 @@ class	PhoneBook
 		PhoneBook();
 		void	NewContact();
 		void	PrintTable();
+		void	PrintRow(size_t i);
+		void	PrintContact();
 };
 #endif

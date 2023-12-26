@@ -15,6 +15,10 @@ class	Contact
 	public:
 		Contact();
 		void		SetContact(size_t i);
-		std::string	GetField(const std::string field);
+		std::string	GetFirst();
+		std::string	GetLast();
+		std::string	GetNick();
+		std::string	GetPhone();
+		std::string	GetDarkest();
 };
 #endif
