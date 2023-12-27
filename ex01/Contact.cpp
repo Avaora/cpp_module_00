@@ -9,6 +9,15 @@ Contact::Contact()
 	darkest_sec = "";
 }
 
+Contact::~Contact()
+{
+	firstname = "";
+	lastname = "";
+	nickname = "";
+	pnumber = "";
+	darkest_sec = "";
+}
+
 std::string	Contact::GetFirst()
 {
 	return (firstname);

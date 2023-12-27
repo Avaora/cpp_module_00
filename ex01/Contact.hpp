@@ -13,6 +13,7 @@ class	Contact
 		std::string	darkest_sec;
 	public:
 		Contact();
+		~Contact();
 		std::string	GetFirst();
 		std::string	GetLast();
 		std::string	GetNick();
