@@ -6,7 +6,6 @@
 class	Contact
 {
 	private:
-		size_t		index;
 		std::string	firstname;
 		std::string	lastname;
 		std::string	nickname;
@@ -14,11 +13,15 @@ class	Contact
 		std::string	darkest_sec;
 	public:
 		Contact();
-		void		SetContact(size_t i);
 		std::string	GetFirst();
 		std::string	GetLast();
 		std::string	GetNick();
 		std::string	GetPhone();
 		std::string	GetDarkest();
+		void		SetFirst(std::string str);
+		void		SetLast(std::string str);
+		void		SetNick(std::string str);
+		void		SetPhone(std::string str);
+		void		SetDarkest(std::string str);
 };
 #endif

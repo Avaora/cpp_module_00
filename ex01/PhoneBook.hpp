@@ -9,12 +9,13 @@ class	PhoneBook
 {
 	private:
 		Contact arr[8];
-		size_t	index;
+		int		index;
 	public:
 		PhoneBook();
 		void	NewContact();
 		void	PrintTable();
-		void	PrintRow(size_t i);
+		void	PrintRow(int i);
 		void	PrintContact();
+		void	GetField(std::string &str, std::string prompt);
 };
 #endif

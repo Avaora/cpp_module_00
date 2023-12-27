@@ -2,26 +2,11 @@
 
 Contact::Contact()
 {
-	index = 0;
 	firstname = "";
 	lastname = "";
 	nickname = "";
 	pnumber = "";
 	darkest_sec = "";
-}
-void	Contact::SetContact(size_t i)
-{
-	index = i;
-	std::cout << "Firstname: ";
-	std::getline(std::cin, firstname);
-	std::cout << "Lastname: ";
-	std::getline(std::cin, lastname);
-	std::cout << "Nickname: ";
-	std::getline(std::cin, nickname);
-	std::cout << "Phone Number: ";
-	std::getline(std::cin, pnumber);
-	std::cout << "Darkest Secret: ";
-	std::getline(std::cin, darkest_sec);
 }
 
 std::string	Contact::GetFirst()
@@ -47,4 +32,29 @@ std::string	Contact::GetPhone()
 std::string	Contact::GetDarkest()
 {
 	return (darkest_sec);
+}
+
+void	Contact::SetFirst(std::string str)
+{
+	firstname = str;
+}
+
+void	Contact::SetLast(std::string str)
+{
+	lastname = str;
+}
+
+void	Contact::SetNick(std::string str)
+{
+	nickname = str;
+}
+
+void	Contact::SetPhone(std::string str)
+{
+	pnumber = str;
+}
+
+void	Contact::SetDarkest(std::string str)
+{
+	darkest_sec = str;
 }
