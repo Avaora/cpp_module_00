@@ -1,6 +1,5 @@
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -g
-STD = -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
 SRCS = main.cpp PhoneBook.cpp Contact.cpp
@@ -9,9 +8,9 @@ NAME = archive
 
 all : $(NAME)
 $(NAME) : $(OBJS)
-	$(CXX) $(CXXFLAGS) $(STD) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 $(OBJS) : $(SRCS)
-	$(CXX) $(CXXFLAGS) $(STD) $(SRCS) -c
+	$(CXX) $(CXXFLAGS) $(SRCS) -c
 clean :
 	$(RM) $(OBJS)
 fclean : clean
